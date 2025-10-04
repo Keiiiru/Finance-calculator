@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
-import { loginUser } from "~/features/user/loginUser";
+import { loginUser } from "~/features/user/model/loginUser";
 import { UserRequestFieldsType } from "~/shared/types";
 
 export async function POST(request: NextRequest) {
