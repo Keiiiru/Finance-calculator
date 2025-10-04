@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { registerUser } from "~/features/user/createUser";
+import { registerUser } from "~/features/user/model/createUser";
 import { UserDTO } from "~/shared/types";
 
 export async function POST(request: NextRequest) {
