@@ -1,5 +1,5 @@
 import { prisma } from "~/shared/lib/prisma";
-import { UserDTO } from "~/shared/types";
+import { UserDTO } from "~/shared/types/user";
 
 export async function createUser({
   username,

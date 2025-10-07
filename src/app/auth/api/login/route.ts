@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { loginUser } from "~/features/user/model/loginUser";
-import { UserRequestFieldsType } from "~/shared/types";
+import { UserRequestFieldsType } from "~/shared/types/user";
 
 export async function POST(request: NextRequest) {
   const body: UserRequestFieldsType = await request.json();

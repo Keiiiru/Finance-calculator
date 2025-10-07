@@ -1,5 +1,5 @@
 import { UserFeature } from "~/shared/lib/zod";
-import { UserDTO, UserFeturesType } from "~/shared/types";
+import { UserDTO, UserFeturesType } from "~/shared/types/user";
 import { createUser } from "~/entities/user/createUser";
 import { hashedPassword } from "~/shared/lib/hash";
 
