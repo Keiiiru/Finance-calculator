@@ -2,7 +2,7 @@ import { getUserForLogin } from "~/entities/user/getUserForLogin";
 import { updateRefreshToken } from "~/entities/user/updateRefreshToken";
 import { comparePasswords } from "~/shared/lib/hash";
 import { signAccessToken, signRefreshToken } from "~/shared/lib/jwt";
-import { UserRequestFieldsType } from "~/shared/types";
+import { UserRequestFieldsType } from "~/shared/types/user";
 
 export async function loginUser({ email, password }: UserRequestFieldsType) {
   if (!email || !password) throw new Error("Missing fields");

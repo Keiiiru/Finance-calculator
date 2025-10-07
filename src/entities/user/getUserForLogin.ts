@@ -1,5 +1,5 @@
 import { prisma } from "~/shared/lib/prisma";
-import { UserEntityType } from "~/shared/types";
+import { UserEntityType } from "~/shared/types/user";
 
 export async function getUserForLogin(email: string): Promise<UserEntityType> {
   const user = await prisma.user.findUnique({
